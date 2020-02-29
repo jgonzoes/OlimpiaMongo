@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Olimpia.Mongo.Bankin.Domain\Olimpia.Mongo.Bankin.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
