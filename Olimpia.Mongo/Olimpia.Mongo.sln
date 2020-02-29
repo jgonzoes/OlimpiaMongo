@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olimpia.Mongo.Domain.core", "Olimpia.Mongo.Domain.core\Olimpia.Mongo.Domain.core.csproj", "{2A9B71F4-328E-4F26-9CF9-2E0C12A450BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olimpia.Mongo.Rabbit.Infra.Bus", "Olimpia.Mongo.Rabbit.Infra.Bus\Olimpia.Mongo.Rabbit.Infra.Bus.csproj", "{271FB635-1924-428D-AF4D-E39873143DEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,12 +27,17 @@ Global
 		{2A9B71F4-328E-4F26-9CF9-2E0C12A450BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A9B71F4-328E-4F26-9CF9-2E0C12A450BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A9B71F4-328E-4F26-9CF9-2E0C12A450BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{271FB635-1924-428D-AF4D-E39873143DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{271FB635-1924-428D-AF4D-E39873143DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{271FB635-1924-428D-AF4D-E39873143DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{271FB635-1924-428D-AF4D-E39873143DEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2A9B71F4-328E-4F26-9CF9-2E0C12A450BA} = {C48F5E19-4550-4E6F-B7EA-62AD11F9BB46}
+		{271FB635-1924-428D-AF4D-E39873143DEC} = {6C1BE531-5C14-4060-B891-D592C693847E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D016BC41-583C-4B3E-BDD9-883C864D4378}
