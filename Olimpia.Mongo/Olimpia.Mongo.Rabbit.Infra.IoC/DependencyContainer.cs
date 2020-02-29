@@ -16,7 +16,25 @@ namespace Olimpia.Mongo.Rabbit.Infra.IoC
                 return new RabbitMQBus(sp.GetService<IMediator>(), scopeFactory);
             });
 
+            ////Subscriptions
+            //services.AddTransient<TransferEventHandler>();
 
+            ////Domain Events
+            //services.AddTransient<IEventHandler<TransferCreatedEvent>, TransferEventHandler>();
+
+            ////Domain Banking Commands
+            //services.AddTransient<IRequestHandler<CreateTransferCommand, bool>, TransferCommandHandler>();
+
+            ////Banking Microservice - Application Services
+            //services.AddTransient<IAccountService, AccountService>();
+            //services.AddTransient<ITransferService, TransferService>();
+
+            ////Banking Microservice - Data
+            //services.AddTransient<IAccountRepository, AccountRepository>();
+            //services.AddTransient<ITransferRepository, TransferRepository>();
+
+            //services.AddTransient<BankingDbContext>();
+            //services.AddTransient<TransferDbContext>();
         }
     }
 }
