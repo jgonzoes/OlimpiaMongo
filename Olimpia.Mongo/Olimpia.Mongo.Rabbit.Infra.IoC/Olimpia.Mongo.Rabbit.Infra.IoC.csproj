@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
@@ -9,6 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Olimpia.Mongo.Bankin.Aplication\Olimpia.Mongo.Bankin.Aplication.csproj" />
+    <ProjectReference Include="..\Olimpia.Mongo.Bankin.Data\Olimpia.Mongo.Bankin.Data.csproj" />
+    <ProjectReference Include="..\Olimpia.Mongo.Bankin.Domain\Olimpia.Mongo.Bankin.Domain.csproj" />
+    <ProjectReference Include="..\Olimpia.Mongo.Domain.core\Olimpia.Mongo.Domain.core.csproj" />
     <ProjectReference Include="..\Olimpia.Mongo.Rabbit.Infra.Bus\Olimpia.Mongo.Rabbit.Infra.Bus.csproj" />
   </ItemGroup>
 

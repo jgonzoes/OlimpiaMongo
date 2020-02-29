@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace Olimpia.Mongo.Bankin.Aplication.Services
 {
-    class AccountService : IAccountService
+    public class AccountService : IAccountService
     {
         private readonly IAccountRepository _accountRepository;
         private readonly IEventBus _bus;
@@ -21,7 +21,8 @@ namespace Olimpia.Mongo.Bankin.Aplication.Services
 
         public IEnumerable<Account> GetAccounts()
         {
-            return _accountRepository.GetAccounts();
+            var sdfs= _accountRepository.GetAccounts();
+            return sdfs;
         }
 
         public void Transfer(AccountTransfer accountTransfer)
