@@ -5,13 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CommandHandlers\" />
-    <Folder Include="Commands\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Olimpia.Mongo.Bankin.Domain\Olimpia.Mongo.Bankin.Domain.csproj" />
     <ProjectReference Include="..\Olimpia.Mongo.Domain.core\Olimpia.Mongo.Domain.core.csproj" />
+    <ProjectReference Include="..\Olimpia.Mongo.Transfe.Domain\Olimpia.Mongo.Transfe.Domain.csproj" />
   </ItemGroup>
 
 </Project>

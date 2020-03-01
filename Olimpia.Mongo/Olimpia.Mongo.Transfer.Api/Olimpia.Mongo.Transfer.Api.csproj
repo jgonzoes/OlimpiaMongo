@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UserSecretsId>f294fb3f-4452-4431-aaf9-1b561a5fe412</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Olimpia.Mongo.Rabbit.Infra.IoC\Olimpia.Mongo.Rabbit.Infra.IoC.csproj" />
+    <ProjectReference Include="..\Olimpia.Mongo.Transfer.Aplication\Olimpia.Mongo.Transfer.Aplication.csproj" />
+    <ProjectReference Include="..\Olimpis.Momgo.Transfer.Data\Olimpis.Momgo.Transfer.Data.csproj" />
+  </ItemGroup>
+
+</Project>

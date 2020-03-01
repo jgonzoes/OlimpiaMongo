@@ -21,8 +21,7 @@ namespace Olimpia.Mongo.Bankin.Aplication.Services
 
         public IEnumerable<Account> GetAccounts()
         {
-            var sdfs= _accountRepository.GetAccounts();
-            return sdfs;
+            return _accountRepository.GetAccounts();
         }
 
         public void Transfer(AccountTransfer accountTransfer)

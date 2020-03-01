@@ -14,6 +14,8 @@
     <ProjectReference Include="..\Olimpia.Mongo.Bankin.Domain\Olimpia.Mongo.Bankin.Domain.csproj" />
     <ProjectReference Include="..\Olimpia.Mongo.Domain.core\Olimpia.Mongo.Domain.core.csproj" />
     <ProjectReference Include="..\Olimpia.Mongo.Rabbit.Infra.Bus\Olimpia.Mongo.Rabbit.Infra.Bus.csproj" />
+    <ProjectReference Include="..\Olimpia.Mongo.Transfer.Aplication\Olimpia.Mongo.Transfer.Aplication.csproj" />
+    <ProjectReference Include="..\Olimpis.Momgo.Transfer.Data\Olimpis.Momgo.Transfer.Data.csproj" />
   </ItemGroup>
 
 </Project>
