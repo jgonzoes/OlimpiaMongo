@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Olimpia.Mongo.TransferMongo.Aplication.Interfaces
 {
-    public interface ITransferService
+    public interface ITransferMongoService
     {
         IEnumerable<TransferLog> GetTransferLogs();
     }

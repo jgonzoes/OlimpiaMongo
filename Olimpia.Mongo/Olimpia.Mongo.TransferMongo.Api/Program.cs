@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Olimpia.Mongo.Bankin.Api
+namespace Olimpia.Mongo.TransferMongo.Api
 {
     public class Program
     {

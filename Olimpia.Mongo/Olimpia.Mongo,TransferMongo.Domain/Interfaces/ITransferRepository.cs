@@ -3,12 +3,11 @@ using System.Collections.Generic;
 
 namespace Olimpia.Mongo_TransferMongo.Domain.Interfaces
 {
-    public interface ITransferRepository
+    public interface ITransferMongoRepository
     {
         IEnumerable<TransferLog> GetTransferLogs();
 
-        void Add(TransferLog transferLog);
-
+        TransferLog Add(TransferLog transferlog);
         void Remove(string id);
     }
 }

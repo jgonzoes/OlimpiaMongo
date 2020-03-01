@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Olimpia.Mongo_TransferMongo.Domain.EventHandlers
 {
-    public class TransferEventHandler : IEventHandler<TransferCreatedEvent>
+    public class TransferMongoEventHandler : IEventHandler<TransferMongoCreatedEvent>
     {
-        private readonly ITransferRepository _transferRepository;
+        private readonly ITransferMongoRepository _transferRepository;
 
-        public TransferEventHandler(ITransferRepository transferRepository)
+        public TransferMongoEventHandler(ITransferMongoRepository transferRepository)
         {
             _transferRepository = transferRepository;
         }
 
-        public Task Handle(TransferCreatedEvent @event)
+        public Task Handle(TransferMongoCreatedEvent @event)
         {
             _transferRepository.Add(new TransferLog()
             {

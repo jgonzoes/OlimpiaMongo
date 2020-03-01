@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olimpia.Mongo.TransferMongo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olimpia.Mongo.TransferMongo.Aplication", "Olimpia.Mongo.TransferMongo.Aplication\Olimpia.Mongo.TransferMongo.Aplication.csproj", "{3D8CA424-30F6-48A5-8425-40EC4F3EA68D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olimpia.Mongo.TransferMongo.Api", "Olimpia.Mongo.TransferMongo.Api\Olimpia.Mongo.TransferMongo.Api.csproj", "{56752ED6-AD37-484F-911A-65A57C29255C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -133,6 +135,10 @@ Global
 		{3D8CA424-30F6-48A5-8425-40EC4F3EA68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D8CA424-30F6-48A5-8425-40EC4F3EA68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D8CA424-30F6-48A5-8425-40EC4F3EA68D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56752ED6-AD37-484F-911A-65A57C29255C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56752ED6-AD37-484F-911A-65A57C29255C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56752ED6-AD37-484F-911A-65A57C29255C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56752ED6-AD37-484F-911A-65A57C29255C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -167,6 +173,7 @@ Global
 		{88057EC2-4878-41A4-B3A6-12B4E0FCD443} = {2F514ABA-7066-4D06-A110-ED20F65F3728}
 		{3E13CF28-EA08-4B0E-9E41-45389883DBA3} = {F4F92E7C-B62E-4319-9079-7FF09D5F52DA}
 		{3D8CA424-30F6-48A5-8425-40EC4F3EA68D} = {83059A8C-0983-49BE-BA00-8270465F333F}
+		{56752ED6-AD37-484F-911A-65A57C29255C} = {4E328A3E-8CBC-4743-873D-DA0879CD5B59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D016BC41-583C-4B3E-BDD9-883C864D4378}

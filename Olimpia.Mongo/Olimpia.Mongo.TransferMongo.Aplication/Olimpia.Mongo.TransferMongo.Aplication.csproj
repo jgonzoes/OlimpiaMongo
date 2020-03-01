@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Olimpia.Mongo,TransferMongo.Domain\Olimpia.Mongo.TransferMongo.Domain.csproj" />
+    <ProjectReference Include="..\Olimpia.Mongo.Transfe.Domain\Olimpia.Mongo.Transfe.Domain.csproj" />
   </ItemGroup>
 
 </Project>

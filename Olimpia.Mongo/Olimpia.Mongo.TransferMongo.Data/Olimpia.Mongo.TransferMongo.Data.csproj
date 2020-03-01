@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Olimpia.Mongo,TransferMongo.Domain\Olimpia.Mongo.TransferMongo.Domain.csproj" />
-    <ProjectReference Include="..\Olimpia.Mongo.Rabbit.Infra.IoC\Olimpia.Mongo.Rabbit.Infra.IoC.csproj" />
   </ItemGroup>
 
 </Project>

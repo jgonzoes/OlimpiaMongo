@@ -9,12 +9,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Olimpia.Mongo,TransferMongo.Domain\Olimpia.Mongo.TransferMongo.Domain.csproj" />
     <ProjectReference Include="..\Olimpia.Mongo.Bankin.Aplication\Olimpia.Mongo.Bankin.Aplication.csproj" />
     <ProjectReference Include="..\Olimpia.Mongo.Bankin.Data\Olimpia.Mongo.Bankin.Data.csproj" />
     <ProjectReference Include="..\Olimpia.Mongo.Bankin.Domain\Olimpia.Mongo.Bankin.Domain.csproj" />
     <ProjectReference Include="..\Olimpia.Mongo.Domain.core\Olimpia.Mongo.Domain.core.csproj" />
     <ProjectReference Include="..\Olimpia.Mongo.Rabbit.Infra.Bus\Olimpia.Mongo.Rabbit.Infra.Bus.csproj" />
     <ProjectReference Include="..\Olimpia.Mongo.Transfer.Aplication\Olimpia.Mongo.Transfer.Aplication.csproj" />
+    <ProjectReference Include="..\Olimpia.Mongo.TransferMongo.Aplication\Olimpia.Mongo.TransferMongo.Aplication.csproj" />
+    <ProjectReference Include="..\Olimpia.Mongo.TransferMongo.Data\Olimpia.Mongo.TransferMongo.Data.csproj" />
     <ProjectReference Include="..\Olimpis.Momgo.Transfer.Data\Olimpis.Momgo.Transfer.Data.csproj" />
   </ItemGroup>
 

@@ -14,6 +14,13 @@ using Olimpia.Mongo.Transfe.Domain.EventHandlers;
 using Olimpia.Mongo.Transfe.Domain.Interfaces;
 using Olimpia.Mongo.Transfer.Aplication.Interfaces;
 using Olimpia.Mongo.Transfer.Aplication.Services;
+using Olimpia.Mongo.TransferMongo.Aplication.Interfaces;
+using Olimpia.Mongo.TransferMongo.Aplication.Services;
+using Olimpia.Mongo.TransferMongo.Data.Context;
+using Olimpia.Mongo.TransferMongo.Data.Repository;
+using Olimpia.Mongo_TransferMongo.Domain.EventHandlers;
+using Olimpia.Mongo_TransferMongo.Domain.Events;
+using Olimpia.Mongo_TransferMongo.Domain.Interfaces;
 using Olimpis.Momgo.Transfer.Data.Context;
 using Olimpis.Momgo.Transfer.Data.Repository;
 
@@ -32,9 +39,11 @@ namespace Olimpia.Mongo.Rabbit.Infra.IoC
 
             //Subscriptions
             services.AddTransient<TransferEventHandler>();
+            //services.AddTransient<TransferMongoEventHandler>();
 
             //Domain Events
             services.AddTransient<IEventHandler<TransferCreatedEvent>, TransferEventHandler>();
+            //services.AddTransient<IEventHandler<TransferMongoCreatedEvent>, TransferMongoEventHandler>();
 
             //Domain Banking Commands
             services.AddTransient<IRequestHandler<CreateTransferCommand, bool>, TransferCommandHandler>();
@@ -42,13 +51,16 @@ namespace Olimpia.Mongo.Rabbit.Infra.IoC
             //Banking Microservice - Application Services
             services.AddTransient<IAccountService, AccountService>();
             services.AddTransient<ITransferService, TransferService>();
+            //services.AddTransient<ITransferMongoService, TransferMongoService>();
 
             //Banking Microservice - Data
             services.AddTransient<IAccountRepository, AccountRepository>();
             services.AddTransient<ITransferRepository, TransferRepository>();
+            //services.AddTransient<ITransferMongoRepository, TransferMongoRepository>();
 
             services.AddTransient<BankingDbContext>();
             services.AddTransient<TransferDbContext>();
+            //services.AddTransient<Context>();
         }
     }
 }

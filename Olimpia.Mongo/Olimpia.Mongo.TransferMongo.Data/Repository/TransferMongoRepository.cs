@@ -1,21 +1,27 @@
-﻿
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
 using Olimpia.Mongo_TransferMongo.Domain.Interfaces;
 using Olimpia.Mongo_TransferMongo.Domain.Models;
 using System.Collections.Generic;
+using Olimpia.Mongo.TransferMongo.Data.Context;
 
 namespace Olimpia.Mongo.TransferMongo.Data.Repository
 {
-    public class TransferMongoRepository 
+    public class TransferMongoRepository : ITransferMongoRepository
     {
+        private readonly Context.Context _context;
+
+        public TransferMongoRepository(Context.Context context)
+        {
+            _context = context;
+        }
+
         private readonly IMongoCollection<TransferLog> _transferLog;
 
         public TransferMongoRepository(IDatabaseSettings settings)
         {
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
-
-            _transferLog = database.GetCollection<TransferLog>(settings.transferlogsCollectionName);
+            _transferLog = database.GetCollection<TransferLog>(settings.LogsCollectionName);
         }
 
         public IEnumerable<TransferLog> GetTransferLogs() =>
