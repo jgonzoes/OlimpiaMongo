@@ -112,7 +112,7 @@ namespace Olimpia.Mongo.Rabbit.Infra.Bus
             }
             catch (Exception ex)
             {
-
+                var error = ex.Message;
             }
         }
 
