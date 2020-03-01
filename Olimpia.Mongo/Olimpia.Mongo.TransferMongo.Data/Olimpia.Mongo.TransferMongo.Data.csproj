@@ -5,9 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Context\" />
     <Folder Include="Migrations\" />
-    <Folder Include="Repository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.1.2" />
+    <PackageReference Include="MongoDB.Driver" Version="2.10.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Olimpia.Mongo,TransferMongo.Domain\Olimpia.Mongo.TransferMongo.Domain.csproj" />
+    <ProjectReference Include="..\Olimpia.Mongo.Rabbit.Infra.IoC\Olimpia.Mongo.Rabbit.Infra.IoC.csproj" />
   </ItemGroup>
 
 </Project>
