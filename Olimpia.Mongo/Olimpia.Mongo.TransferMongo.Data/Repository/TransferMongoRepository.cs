@@ -9,19 +9,14 @@ namespace Olimpia.Mongo.TransferMongo.Data.Repository
     public class TransferMongoRepository : ITransferMongoRepository
     {
         private readonly Context.Context _context;
-
-        public TransferMongoRepository(Context.Context context)
-        {
-            _context = context;
-        }
-
         private readonly IMongoCollection<TransferLog> _transferLog;
 
-        public TransferMongoRepository(IDatabaseSettings settings)
+        public TransferMongoRepository(IDatabaseSettings settings, Context.Context context)
         {
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
             _transferLog = database.GetCollection<TransferLog>(settings.LogsCollectionName);
+            _context = context;
         }
 
         public IEnumerable<TransferLog> GetTransferLogs() =>

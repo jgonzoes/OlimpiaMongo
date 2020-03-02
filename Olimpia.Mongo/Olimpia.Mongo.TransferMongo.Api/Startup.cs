@@ -33,6 +33,7 @@ namespace Olimpia.Mongo.TransferMongo.Api
                 options.UseSqlServer(Configuration.GetConnectionString("TransferDbConnection"));
             });
 
+
             services.AddControllers();
 
             services.AddSwaggerGen(c =>
